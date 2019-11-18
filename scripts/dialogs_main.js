@@ -64,6 +64,14 @@ const initializeDetailButtonEvents = () => {
     }
   )
 
+  // document.querySelector("#button--bridge").addEventListener(
+  //   "click",
+  //   theClickEvent => {
+  //     const theDialog = document.querySelector("#details--bridge")
+  //     theDialog.showModal()
+  //   }
+  // )
+
 }
 
 
