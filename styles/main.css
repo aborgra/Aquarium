@@ -64,6 +64,7 @@ img {
 .highlightFish {
   background-color: rgb(231, 227, 216);
 }
+
 aside{
   width: 30%;
   border: 2px solid black;
@@ -134,6 +135,10 @@ nav {
 
   font-size: 18pt;
   font-weight: bold;
+}
+
+.tip {
+  padding: 20pt;
 }
 
 .fish {
