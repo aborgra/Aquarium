@@ -1,52 +1,52 @@
 const fishCollection = [
   {
     name: "Bart",
-    Species: "Orange Clownfish",
-    Location: "Caribbean",
-    Length: 1,
-    Food: ["Algae", "Crustaceans"],
+    species: "Orange Clownfish",
+    location: "Caribbean",
+    size: 1,
+    food: ["Algae", "Crustaceans"],
     image: "/images/bartpic.jpg"
   },
   {
     name: "Jerry",
-    Species: "Yellow Fish",
-    Location: "Pacific Ocean",
-    Length: 2,
-    Food: "Boogers",
+    species: "Yellow Fish",
+    location: "Pacific Ocean",
+size: 2,
+    food: ["Boogers"],
     image: "/images/jerrypic.jpg"
   },
   {
     name: "Mike",
-    Species: "Pink Fish",
-    Location: "Arctic Ocean",
-    Length: 3,
-    Food: "Ice",
+    species: "Pink Fish",
+    location: "Arctic Ocean",
+size: 3,
+    food: ["Ice"],
     image: "/images/mikepic.jpg"
   },
   {
     name: "Noodle",
-    Species: "Blue Fish",
-    Location: "Dead Sea",
-    Length: 4,
-    Food: "Salt",
+    species: "Blue Fish",
+    location: "Dead Sea",
+size: 4,
+    food: ["Salt"],
     image: "/images/noodlepic.jpg"
   },
   {
     name: "Erroll",
-    Species: "Rainbow Fish",
-    Location: "Atlantic Ocean",
-    Length: 5,
-    Food: "People",
+    species: "Rainbow Fish",
+    location: "Atlantic Ocean",
+size: 5,
+    food: ["People"],
     image: "/images/errollpic.jpg"
   },
   {
     name: "Sam",
-    Species: "Beluga Fish",
-    Location: "Caribbean",
-    Length: 6,
-    Food: "Lobsters",
+    species: "Beluga Fish",
+    location: "Caribbean",
+    size: 6,
+    food: ["Lobsters"],
     image: "/images/sampic.jpg"
-  },
+  }
 ]
 
 export const useFish = () => {

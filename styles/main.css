@@ -43,14 +43,15 @@ img {
   max-width: 100%;
 }
 
-.fishies {
+.fishList {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
   justify-content: space-evenly;
+  flex-basis: 90%;
 }
 
-.fishies__card {
+.fish {
   flex-basis: 30%;
   text-align: center;
   border: 1pt solid black;
@@ -74,19 +75,26 @@ display: flex;
 flex-direction: column;
 }
 
-.tips {
+.quotes {
   border: 2pt solid black;
   margin: 5pt;
   margin-bottom: 25pt;
   display: flex;
-  flex-direction: row;
-  padding: 15pt;
-  flex-basis: 10%;
+  /* flex-direction: row; */
+  padding: 5pt;
+  /* flex-basis: 10%; */
+  justify-content: space-around;
 }
 
-.tips__tip {
-  margin: 10pt;
-  padding 15pt;
+.quoteList {
+  display: flex;
+  flex-direction: row;
+}
+.quote {
+  flex-basis: 100%;
+  border: 1pt solid black;
+  margin: 20pt;
+  padding: 5pt;
 }
 
 .addTipsBorder {
@@ -97,18 +105,23 @@ flex-direction: column;
 
 .locations {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
+.locationList {
+  display:flex;
+  
+
+}
+
 .locations__location {
+  flex-basis: 20%;
   border: 2pt solid black;
   margin: 10pt;
   padding: 10pt;
   border-radius: 5%;
   box-shadow: 8px 8px 5px rgb(70, 69, 69);
   text-align: center;
-
 }
 
 nav {
@@ -128,12 +141,12 @@ nav {
   align-content: center;
 }
 
-.dialog--fish {
+/* .dialog--fish {
   border: 2pt solid black;
   border-radius: 5%;
   font-size: 15pt;
 
-}
+} */
 
 .button {
   color: white;
