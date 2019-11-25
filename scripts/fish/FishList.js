@@ -1,32 +1,41 @@
-
 /**
  *  FishListComponent which renders individual fish objects as HTML
  */
-import { useFish } from "/scripts/fish/fish_data_provider.js"
-import FishComponent from "/scripts/fish/fish.js"
+import { useFish } from "/scripts/fish/fish_data_provider.js";
+import FishComponent from "/scripts/fish/fish.js";
 
 // Import `useFish` from the data provider module (this module is dependent on the fish_data_provider)
 
 const FishListComponent = () => {
-
   // Get a reference to the `<article class="content">` element (tells which class to insert the HTML)
-  const contentElement = document.querySelector(".fishList")
-  const fishes = useFish() //var fishes now equals the data in the array due to the return statement
+  const contentElement = document.querySelector(".fishList");
+  const fishes = useFish(); //var fishes now equals the data in the array due to the return statement
 
-let allFishHTML = ""
+  // Below is the same functionality as the following bit of code, just different syntax
 
-for (const fish of fishes) {
-  const fishHTML = FishComponent(fish)
-  allFishHTML += fishHTML
-}
-  
+  // let allFishHTML = ""
 
-  // Add to the existing HTML in the content element
+  // for (const fish of fishes) {
+  //   const fishHTML = FishComponent(fish)
+  //   allFishHTML += fishHTML
+  // }
+
+  //   // Add to the existing HTML in the content element
+  //   contentElement.innerHTML += `
+  //       <section class="fishList">
+  //           ${allFishHTML}
+  //       </section>
+  //   `
+  // }
+
   contentElement.innerHTML += `
       <section class="fishList">
-          ${allFishHTML}
+          ${fishes
+            .map(currentfish => {
+              return FishComponent(currentfish);
+            })
+            .join("")}
       </section>
-  `
-}
-
-export default FishListComponent
+  `;
+};
+export default FishListComponent;

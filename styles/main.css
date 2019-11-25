@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(177, 204, 229);
+  background-color: rgb(255, 255, 255);
 }
 h1 {
   text-align: center;
@@ -62,12 +62,12 @@ img {
 }
 
 .highlightFish {
-  background-color: rgb(231, 227, 216);
+  background-color: lightcoral;
 }
 
 aside {
   width: 30%;
-  border: 2px solid black;
+  border-left: 2px solid black;
   padding: 5px;
 }
 
@@ -77,7 +77,7 @@ aside {
 }
 
 .quotes {
-  border: 2pt solid black;
+  /* border: 2pt solid black; */
   margin: 5pt;
   margin-bottom: 25pt;
   display: flex;
@@ -93,9 +93,11 @@ aside {
 }
 .quote {
   flex-basis: 100%;
-  border: 1pt solid black;
+  border-left: 1pt solid black;
+  border-right: 1pt solid black;
   margin: 20pt;
   padding: 5pt;
+  text-align: center;
 }
 
 .addTipsBorder {

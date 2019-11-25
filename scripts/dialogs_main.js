@@ -20,61 +20,61 @@ const initializeDetailButtonEvents = () => {
       theDialog.showModal();
     });
   }
-  // Show Bart's details when the button is clicked
-  // document.querySelector("#button--bart").addEventListener(
-  //   "click",
-  //   theClickEvent => {
-  //     const theDialog = document.querySelector("#details--bart")
-  //     theDialog.showModal()
-  //   }
-  // )
-
-  // document.querySelector("#button--sam").addEventListener(
-  //   "click",
-  //   theClickEvent => {
-  //     const theDialog = document.querySelector("#details--sam")
-  //     theDialog.showModal()
-  //   }
-  // )
-
-  // document.querySelector("#button--erroll").addEventListener(
-  //   "click",
-  //   theClickEvent => {
-  //     const theDialog = document.querySelector("#details--erroll")
-  //     theDialog.showModal()
-  //   }
-  // )
-
-  // document.querySelector("#button--noodle").addEventListener(
-  //   "click",
-  //   theClickEvent => {
-  //     const theDialog = document.querySelector("#details--noodle")
-  //     theDialog.showModal()
-  //   }
-  // )
-
-  // document.querySelector("#button--mike").addEventListener(
-  //   "click",
-  //   theClickEvent => {
-  //     const theDialog = document.querySelector("#details--mike")
-  //     theDialog.showModal()
-  //   }
-  // )
-  // document.querySelector("#button--jerry").addEventListener(
-  //   "click",
-  //   theClickEvent => {
-  //     const theDialog = document.querySelector("#details--jerry")
-  //     theDialog.showModal()
-  //   }
-  // )
-
-  // // document.querySelector("#button--bridge").addEventListener(
-  // //   "click",
-  // //   theClickEvent => {
-  // //     const theDialog = document.querySelector("#details--bridge")
-  // //     theDialog.showModal()
-  // //   }
-  // // )
 };
+// Show Bart's details when the button is clicked
+// document.querySelector("#button--bart").addEventListener(
+//   "click",
+//   theClickEvent => {
+//     const theDialog = document.querySelector("#details--bart")
+//     theDialog.showModal()
+//   }
+// )
+
+// document.querySelector("#button--sam").addEventListener(
+//   "click",
+//   theClickEvent => {
+//     const theDialog = document.querySelector("#details--sam")
+//     theDialog.showModal()
+//   }
+// )
+
+// document.querySelector("#button--erroll").addEventListener(
+//   "click",
+//   theClickEvent => {
+//     const theDialog = document.querySelector("#details--erroll")
+//     theDialog.showModal()
+//   }
+// )
+
+// document.querySelector("#button--noodle").addEventListener(
+//   "click",
+//   theClickEvent => {
+//     const theDialog = document.querySelector("#details--noodle")
+//     theDialog.showModal()
+//   }
+// )
+
+// document.querySelector("#button--mike").addEventListener(
+//   "click",
+//   theClickEvent => {
+//     const theDialog = document.querySelector("#details--mike")
+//     theDialog.showModal()
+//   }
+// )
+// document.querySelector("#button--jerry").addEventListener(
+//   "click",
+//   theClickEvent => {
+//     const theDialog = document.querySelector("#details--jerry")
+//     theDialog.showModal()
+//   }
+// )
+
+// // document.querySelector("#button--bridge").addEventListener(
+// //   "click",
+// //   theClickEvent => {
+// //     const theDialog = document.querySelector("#details--bridge")
+// //     theDialog.showModal()
+// //   }
+// // )
 
 export default initializeDetailButtonEvents;

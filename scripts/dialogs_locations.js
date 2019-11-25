@@ -1,48 +1,26 @@
 const initializeDetailButtonEvents = () => {
   // CAN'T TOUCH THIS - START
-  const allCloseButtons = document.querySelectorAll(".button--close")
+  const allCloseButtons = document.querySelectorAll(".button--close");
 
   for (const btn of allCloseButtons) {
-    btn.addEventListener(
-      "click",
-      theEvent => {
-        const dialogElement = theEvent.target.parentNode
-        dialogElement.close()
-      }
-    )
+    btn.addEventListener("click", theEvent => {
+      const dialogElement = theEvent.target.parentNode;
+      dialogElement.close();
+    });
   }
 
-  document.querySelector("#button--beach").addEventListener(
-    "click",
-    theClickEvent => {
-      const theDialog = document.querySelector("#details--beach")
-      theDialog.showModal()
-    }
-  )
+  // Get a reference to all buttons that start with "button--"
+  const allDetailButtons = document.querySelectorAll("button[id^='button--']");
 
-  document.querySelector("#button--bridge").addEventListener(
-    "click",
-    theClickEvent => {
-      const theDialog = document.querySelector("#details--bridge")
-      theDialog.showModal()
-    }
-  )
+  // Add an event listener to each one
+  for (const btn of allDetailButtons) {
+    btn.addEventListener("click", theEvent => {
+      const dialogSiblingSelector = `#${theEvent.target.id}+dialog`;
+      const theDialog = document.querySelector(dialogSiblingSelector);
+      theDialog.showModal();
+      // console.log(dialogSiblingSelector);
+    });
+  }
+};
 
-  document.querySelector("#button--fly").addEventListener(
-    "click",
-    theClickEvent => {
-      const theDialog = document.querySelector("#details--fly")
-      theDialog.showModal()
-    }
-  )
-
-  document.querySelector("#button--glacier").addEventListener(
-    "click",
-    theClickEvent => {
-      const theDialog = document.querySelector("#details--glacier")
-      theDialog.showModal()
-    }
-  )
-}
-
-export default initializeDetailButtonEvents
+export default initializeDetailButtonEvents;

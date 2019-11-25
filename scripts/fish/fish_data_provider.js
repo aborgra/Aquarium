@@ -48,6 +48,7 @@ const fishCollection = [
     image: "/images/sampic.jpg"
   }
 ];
+// Function that exports the fish data without giving access to the original data
 
 export const useFish = () => {
   return fishCollection;
