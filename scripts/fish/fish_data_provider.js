@@ -11,7 +11,7 @@ const fishCollection = [
     name: "Jerry",
     species: "Yellow Fish",
     location: "Pacific Ocean",
-size: 2,
+    size: 2,
     food: ["Boogers"],
     image: "/images/jerrypic.jpg"
   },
@@ -19,7 +19,7 @@ size: 2,
     name: "Mike",
     species: "Pink Fish",
     location: "Arctic Ocean",
-size: 3,
+    size: 3,
     food: ["Ice"],
     image: "/images/mikepic.jpg"
   },
@@ -27,7 +27,7 @@ size: 3,
     name: "Noodle",
     species: "Blue Fish",
     location: "Dead Sea",
-size: 4,
+    size: 4,
     food: ["Salt"],
     image: "/images/noodlepic.jpg"
   },
@@ -35,7 +35,7 @@ size: 4,
     name: "Erroll",
     species: "Rainbow Fish",
     location: "Atlantic Ocean",
-size: 5,
+    size: 5,
     food: ["People"],
     image: "/images/errollpic.jpg"
   },
@@ -47,25 +47,21 @@ size: 5,
     food: ["Lobsters"],
     image: "/images/sampic.jpg"
   }
-]
+];
 
 export const useFish = () => {
-  return fishCollection
-}
+  return fishCollection;
+};
 
-
-
-// let addFish = (name, Species, Location, Length, Food) => {
+// let addFish = (name, species, location, size, food, image) => {
 //   let newFish = {
 //     name: name,
-//     Species: Species,
-//     Location: Location,
-//     Length: Length,
-//     Food: Food
+//     species: species,
+//     location: location,
+//     size: size,
+//     food: food
 //   }
 //   fishCollection.push(newFish);
 // }
 
 // addFish("Fluffy", "Brown Fish", "Deep", 8, "Water")
-
-
