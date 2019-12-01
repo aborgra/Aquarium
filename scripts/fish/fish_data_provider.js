@@ -27,7 +27,7 @@ const fishCollection = [
     name: "Noodle",
     species: "Blue Fish",
     location: "Dead Sea",
-    size: 4,
+    size: 10,
     food: ["Salt"],
     image: "/images/noodlepic.jpg"
   },
